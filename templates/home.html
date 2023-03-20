@@ -1,0 +1,165 @@
+{% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mysite</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{%  static 'css/style.css' %}">
+        <link rel="stylesheet" href="{%  static 'css/main.css' %}">
+        <link rel="preconnect" href="https://fonts.google.com/">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+    <body>
+        <div class="site-header siteinner no-sticky">
+            <div class="container">
+                 <div class="header-top">
+                      <div class="left">
+                         <i class="far fa-clock"></i>
+
+                   </div>
+                            <div class="clear"></div>
+                </div><!--end header-top-->
+
+
+                <div class="logo">
+                  <a style="text-decoration:none" href="{% url 'home' %}" class="custom-logo-link" rel="home"><img width="112" height="112" src="static/images/124.png" class="custom-logo" alt="" decoding="async"> </a>           <h1></h1>
+                            </div><!-- logo -->
+                <div class="cotact_info_area">
+
+                         <div class="infobox">
+                           <i class="fas fa-phone-volume"></i>
+                           <span>
+                             <strong>Tel: </strong><a style="text-decoration:none" href="tel:+998919529856">+998919529856</a>
+                                            </span>
+                        </div>
+
+
+
+                         <div class="infobox">
+                           <i class="fas fa-envelope-open-text"></i>
+                           <span>
+
+                             <strong>Send us mail</strong>
+                             <a style="text-decoration:none" href="mailto:sadinovmaqsudjon@gmail.com">
+                             sadinovmaqsudjon@gmail.com</a>
+                          </span>
+                        </div>
+              </div>
+           <div class="clear"></div>
+
+            </div>
+          </div>
+          <div class="container">
+            <div class="row" >
+              <div class="card mb-3" style="max-width: 1000px;">
+                  <div class="row g-0">
+                    <div class="col-md-4 justify-content-end">
+                      <img width="100" height="100" src="static/images/123.png"  alt="...">
+                      <h4>Sadinov Maqsudjon</h4>
+                      <p>Web dasturchi</p>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                          <nav class="navbar navbar-light bg-light">
+                              <form class="container-fluid justify-content-center">
+                                <a href="{% url 'home' %}" class="btn btn-outline-success me-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                                </svg> Men haqimda</a>
+                                <a href="{% url 'about' %}" class="btn btn-sm btn-outline-secondary me-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                  <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                  <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                </svg> Mening faoliyatim</a>
+                                <a href="{% url 'call' %}" class="btn btn-sm btn-outline-info" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg> Bog'lanish</a>
+                              </form>
+                            </nav>
+                            <ul class="list-group">
+                              <li class="list-group-item"><h3>Men haqimda</h3></li>
+                              <li class="list-group-item"><h5>Ism:</h3>Sadinov Maqsudjon </li>
+                              <li class="list-group-item"><h5>Web sayt:</h5> sadinov.uz</li>
+                              <li class="list-group-item"><h5>Email:</h5><a style="text-decoration:none" href="mailto:sadinovmaqsudjon@gmail.com">
+                                sadinovmaqsudjon@gmail.com</a></li>
+                              <li class="list-group-item"><h5>Telegram:</h5><a style="text-decoration:none" href="http://t.me//Sadinov_1">@Sadinov_1 </a></li>
+                                <li class="list-group-item">
+                                  <h5>Nimalar qila olaman?</h5>
+                                  <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          Frontend
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                                          </svg>  Web saytlarni frontend qismi
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Veb-sayt
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-globe-asia-australia" viewBox="0 0 16 16">
+                                            <path d="m10.495 6.92 1.278-.619a.483.483 0 0 0 .126-.782c-.252-.244-.682-.139-.932.107-.23.226-.513.373-.816.53l-.102.054c-.338.178-.264.626.1.736a.476.476 0 0 0 .346-.027ZM7.741 9.808V9.78a.413.413 0 1 1 .783.183l-.22.443a.602.602 0 0 1-.12.167l-.193.185a.36.36 0 1 1-.5-.516l.112-.108a.453.453 0 0 0 .138-.326ZM5.672 12.5l.482.233A.386.386 0 1 0 6.32 12h-.416a.702.702 0 0 1-.419-.139l-.277-.206a.302.302 0 1 0-.298.52l.761.325Z"/>
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.612 10.867l.756-1.288a1 1 0 0 1 1.545-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.882.882 0 0 0 .26-.755c-.075-.548.37-1.033.92-1.099.728-.086 1.587-.324 1.728-.957.086-.386-.114-.83-.361-1.2-.207-.312 0-.8.374-.8.123 0 .24-.055.318-.15l.393-.474c.196-.237.491-.368.797-.403.554-.064 1.407-.277 1.583-.973.098-.391-.192-.634-.484-.88-.254-.212-.51-.426-.515-.741a6.998 6.998 0 0 1 3.425 7.692 1.015 1.015 0 0 0-.087-.063l-.316-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.741.051l-1.021-.329A1 1 0 0 0 11.205 9h-.165a1 1 0 0 0-.945.674l-.172.499a1 1 0 0 1-.404.514l-.802.518a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257a1 1 0 0 1 .542.16l.762.49a.998.998 0 0 0 .283.126 7.001 7.001 0 0 1-9.49-3.409Z"/>
+                                          </svg>  Saytlar va veb-tizimlar
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Server
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-hdd-stack-fill" viewBox="0 0 16 16">
+                                            <path d="M2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z"/>
+                                          </svg>  Serverlar o‘rnatish
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                            </ul>
+                            <div class="footer-bottom">
+                              <div class="container">
+                                   <div class="powerby">
+                                         Sadinov Maqsudjon © 2023
+                                   </div>
+                                   <div class="design-by">
+
+                                   </div>
+                                   <div class="clear"></div>
+
+                                </div><!--end .container-->
+                          </div
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="about">
+                <div class="about-content">
+
+                </div>
+              </div>
+          </div>
+        </div>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

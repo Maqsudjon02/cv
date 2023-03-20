@@ -1,0 +1,35 @@
+
+img {
+    vertical-align: middle;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.art-content {
+    width: 100%;
+    -webkit-box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+.art-content img {
+    width: 60px;
+    height: 60px;
+}
+.profile-info {
+    text-align: center;
+    background: #FFFFFF;
+    -webkit-box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+.name-job {
+    padding: 23px 0;
+    border-bottom: 1px dashed #cccccc;
+}
